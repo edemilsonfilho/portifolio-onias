@@ -13,7 +13,7 @@ body {
 
 
 main {
-    width: 679px;
+    width: 375px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,8 @@ main {
     align-items: center;
     justify-content: space-between;
     height: 87.17px;
-    width: 679px;
+    width: 375px;
+    padding: 0 20px 0 16px;
 }
 
 .menu-toggle {
@@ -75,7 +76,8 @@ main {
 
 
 .menu.show {
-    display: flex;
+    display:flex ;
+    background-color: rgb(255, 255, 255);
 }
 
 .bar-2 {
@@ -86,12 +88,20 @@ main {
     margin: 10px 0;
 }
 
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 #image {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 img {
     width: 340px;
-    height: 350px;
 }
