@@ -63,7 +63,7 @@ main {
 
 .menu-toggle {
     position: fixed;
-    right:110px;
+    right: 100%;
     display: flex;
     flex-direction: column;
     cursor: pointer;
