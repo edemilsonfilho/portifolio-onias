@@ -48,14 +48,18 @@ main {
 .menu-items {
     list-style: none;
     text-align: center;
+    padding: 20px;
+}
 
+.menu-items li {
+    margin: 20px 0;
+    font-size: 24px;
 }
 
 .close-btn {
     position: absolute;
     top: 20px;
     right: 50px;
-    width: 470px;
     font-size: 50px;
     background: none;
     border: none;
@@ -65,13 +69,13 @@ main {
 .menu-toggle {
     position: fixed;
     width: 475px;
-    right: 0;
+    right: -430px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
-#over {
+.over {
     display: flex;
     flex-direction: row;
     align-items: center;
