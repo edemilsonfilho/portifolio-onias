@@ -55,6 +55,7 @@ main {
     position: absolute;
     top: 20px;
     right: 50px;
+    width: 470px;
     font-size: 50px;
     background: none;
     border: none;
@@ -63,13 +64,14 @@ main {
 
 .menu-toggle {
     position: fixed;
-    right: 100%;
+    width: 475px;
+    right: 0;
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
-.over {
+#over {
     display: flex;
     flex-direction: row;
     align-items: center;
