@@ -86,7 +86,7 @@ main {
     color: black;
     padding: 10px;
     background-color: transparent;
-    transition: top 0.3s ease-in-out, 0.3s ease-in-out;
+    transition: top 0.0s ease-in-out, 0.0s ease-in-out;
 }
 
 .menu-toggle {
@@ -114,7 +114,7 @@ main {
     border-radius: 5px;
     padding: 10px;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.0s ease-in-out, transform 0.0s ease-in-out;
     transform: translateY(-10px);
 }
 
@@ -161,7 +161,7 @@ img {
 .icons img {
     width: 35px;
     height: 35px;
-    transition: transform 0.3s;
+    transition: transform 0.0s;
 }
 
 #icons ul {
