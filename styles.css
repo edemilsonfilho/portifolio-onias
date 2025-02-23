@@ -164,11 +164,11 @@ img {
     transition: transform 0.0s;
 }
 
-#icons ul {
+.icons ul {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
     width: 100vw;
     height: 100vh;
 }
@@ -176,7 +176,45 @@ img {
 .icons {
     display: flex;
     justify-content: center;
-    padding-top: 125px;
+    padding-top: 10%;
+    padding-bottom: 142px;
+    gap: 20px;
+}
+
+#icones {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+
+about {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: "Source Code Pro", serif;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+}
+
+.sobre {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+.funcion {
+    display: flex;
+    font-family: "Source Code Pro", serif;
+    flex-direction: column;
+    font-size: 32px;
     padding-bottom: 150px;
-    gap: 50px;
 }
