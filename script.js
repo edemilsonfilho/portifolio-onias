@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const menuOverlay = document.getElementById("menuOverlay");
+    const closeBtn = document.getElementById("closeBtn");
+
+    menuToggle.addEventListener("click", function () {
+        menuOverlay.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", function () {
+        menuOverlay.classList.remove("active");
+    });
+
+    menuOverlay.addEventListener("click", function (e) {
+        if (e.target === menuOverlay) {
+            menuOverlay.classList.remove("active");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".menu a");
 
     links.forEach(link => {
