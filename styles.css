@@ -13,7 +13,7 @@ body {
 
 
 main {
-    width: 375px;
+    width: 400px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,16 +22,22 @@ main {
 
 .logo {
     font-size: 26.8px;
-    color: rgba(0, 0, 0, 1);
+    color: rgb(255, 255, 255);
 }
+
 
 .over {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 87.17px;
-    width: 375px;
+    position: fixed;
+    width: 400px;
+    height: 77.17px;
+    color: black;
+    padding: 5px;
+    background-color: transparent;
+    transition: top 0.3s ease-in-out, 0.3s ease-in-out;
 }
 
 .menu-toggle {
@@ -44,7 +50,7 @@ main {
     width: 35px;
     height: 1px;
     gap: 10px;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
     margin: 3px 0;
 }
 
@@ -59,8 +65,10 @@ main {
     width: 150px;
     border-radius: 5px;
     padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-10px);
 }
-
 .menu a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -74,6 +82,14 @@ main {
     background-color: rgb(255, 255, 255);
 }
 
+.menu.show,
+.menu-toggle:hover+.menu,
+.menu:hover {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .bar-2 {
     margin-top: 10px;
 }
@@ -81,6 +97,7 @@ main {
 .menu li {
     margin: 10px 0;
 }
+
 
 .menu-toggle.active .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -97,5 +114,5 @@ main {
 }
 
 img {
-    width: 375px;
+    width: 400px;
 }

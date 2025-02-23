@@ -1,7 +1,18 @@
-const menuToggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".menu a");
 
-menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
-    menuToggle.classList.toggle('active');
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
 });
