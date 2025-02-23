@@ -8,19 +8,33 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+main {
+    width: 679px;
+    height: 100vh;
+    background-color: #292929;
+}
+
+.over {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 87.17px;
+    width: 679px;
+}
+
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 15px 20px;
-    background-color: white;
+    background-color: rgb(88, 88, 88);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 .logo {
-    font-size: 18px;
-    font-weight: 250;
+    font-size: 26.8px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .menu-toggle {
@@ -30,9 +44,10 @@ body {
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
+    width: 35px;
+    height: 1px;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 1);
     margin: 3px 0;
 }
 
@@ -43,18 +58,14 @@ body {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #444;
+    background-color: #ffffff;
     width: 150px;
     border-radius: 5px;
     padding: 10px;
 }
 
-.menu li {
-    margin: 10px 0;
-}
-
 .menu a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -63,4 +74,12 @@ body {
 
 .menu.show {
     display: flex;
+}
+
+.bar-2 {
+    margin-top: 10px;
+}
+
+.menu li {
+    margin: 10px 0;
 }
